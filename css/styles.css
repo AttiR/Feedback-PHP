@@ -22,9 +22,9 @@ body {
   line-height: 1.4;
   color: var(--color-white);
   margin: 0;
+  text-align: center;
 }
 
-/* mobile friendly alternative to using background-attachment: fixed */
 body::before {
   content: '';
   position: fixed;
@@ -168,4 +168,8 @@ form {
   color: inherit;
   border-radius: 2px;
   cursor: pointer;
+}
+.submitMsg {
+  text-align: center;
+  color: rgb(80, 219, 173);
 }
