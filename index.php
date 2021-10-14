@@ -58,6 +58,7 @@ if (isset($_POST['name'])) {
 
     <header class="header">
       <h1 id="title" class="text-center">Helsinki Gymkhana Cricket Club</h1>
+      <p>We Valued your opinion</p>
       <p id="description" class="description text-center">
         <?php
         if ($insert == true) {
