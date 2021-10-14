@@ -2,18 +2,7 @@
 $insert = false;
 if (isset($_POST['name'])) {
   // Set connection variables
-  $server = "127.0.0.1:52385";
-  $username = "azure";
-  $password = "6#vWHD_$";
-  $databse = "players-feedback";
-
-  // Create a database connection
-  $con = mysqli_connect($server, $username, $password, $database);
-
-  // Check for connection success
-  if (!$con) {
-    die("connection to this database failed due to" . mysqli_connect_error());
-  }
+  include('config/dbcon.php');
   // echo "Success connecting to the db";
 
   // Collect post variables
