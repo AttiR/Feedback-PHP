@@ -2,12 +2,13 @@
 $insert = false;
 if (isset($_POST['name'])) {
   // Set connection variables
-  $server = "localhost";
-  $username = "root";
-  $password = "password";
+  $server = "127.0.0.1:52385";
+  $username = "azure";
+  $password = "6#vWHD_$";
+  $databse = "players-feedback";
 
   // Create a database connection
-  $con = mysqli_connect($server, $username, $password);
+  $con = mysqli_connect($server, $username, $password, $database);
 
   // Check for connection success
   if (!$con) {
